@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+    <tr>
+        <td>Name</td>
+        <td>Author</td>
+        <td>Price</td>
+        <td></td>
+    </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="book in books">
+            <td>{{book.name}}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.price | currency}}</td>
+            <td></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        //TODO pagination
+    </tfoot>
+</table>
