@@ -18,7 +18,7 @@
 		{{book.title}} - {{book.author}} - {{book.price}}
 	</li>
 </ul>
-<script src="../../web-app/app/app.js"></script>
+<script src="app/app.js"></script>
 <script src="app/modules/book/Book.js"></script>
 </body>
 </html>
