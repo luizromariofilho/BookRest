@@ -1,25 +1,50 @@
 /**
  * Created by Luiz Romario Filho on 15/04/2015.
  */
-bookApp.config(['$routeProvider', function($routeProvider){
-    $routeProvider.
-        when('/books', {
-            templateUrl: 'partials/book-list.html',
-            controller: 'BookListController'
-        }).
-        when('/books/:id/view', {
-            templateUrl: 'partials/book-view.html',
-            controller: 'BookViewController'
-        }).
-        when('/books/:id/edit', {
-            templateUrl: 'partials/book-form.html',
-            controller: 'BookEditController'
-        }).
-        when('/books/new', {
-            templateUrl: 'partials/book-form.html',
-            controller: 'BookNewController'
-        }).
-        otherwise({
-            redirectTo: '/books'
+bookApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider){
+    $stateProvider
+        .state('home',{
+            url:"",
+            views:{
+                "main":{
+                    templateUrl:"app/modules/main/partials/home-view.html"
+                }
+            }
+        })
+        .state('list', {
+            url: '/books',
+            views: {
+                "main": {
+                    templateUrl: "app/modules/book/partials/book-list.html",
+                    controller: 'BookListController'
+                }
+            }
+        })
+        .state('view', {
+            url:'/books/:id/view',
+            views: {
+                "main": {
+                    templateUrl: 'app/modules/book/partials/book-view.html',
+                    controller: 'BookViewController'
+                }
+            }
+        })
+        .state('edit', {
+            url: '/books/:id/edit',
+            views: {
+                "main": {
+                    templateUrl: 'app/modules/book/partials/book-form.html',
+                    controller: 'BookEditController'
+                }
+            }
+        })
+        .state('new', {
+            url: '/books/new',
+            views: {
+                "main": {
+                    templateUrl: 'app/modules/book/partials/book-form.html',
+                    controller: 'BookNewController'
+                }
+            }
         });
 }])
