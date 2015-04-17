@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css ">
         <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css ">
         <link rel="stylesheet" href="css/app.css">
+
+        <script src="js/jquery/jquery-2.1.3.js"></script>
         <script src="js/angularjs/angular.js"></script>
         <script src="js/angularjs/angular-resource.js"></script>
         <script src="js/angularjs/angular-route.js"></script>
