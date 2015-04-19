@@ -45,7 +45,12 @@ bookApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider){
             views: {
                 "main": {
                     templateUrl: 'app/modules/book/partials/book-form.html',
-                    controller: 'BookEditController'
+                    controller: 'BookEditController',
+                    resolve:{
+                        Book: ['$stateParams','Book',function($stateParams,Book){
+                            return Book.get({"id" : $stateParams.id}).$promise;
+                        }]
+                    }
                 }
             }
         })

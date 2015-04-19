@@ -54,5 +54,6 @@
         <script src="app/modules/book/controllers/BookListController.js"></script>
         <script src="app/modules/book/controllers/BookNewController.js"></script>
         <script src="app/modules/book/controllers/BookViewController.js"></script>
+        <script src="app/modules/book/controllers/BookEditController.js"></script>
     </body>
 </html>
