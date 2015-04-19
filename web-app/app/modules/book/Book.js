@@ -16,7 +16,13 @@ bookApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider){
             views: {
                 "main": {
                     templateUrl: "app/modules/book/partials/book-list.html",
-                    controller: 'BookListController'
+                    controller: 'BookListController',
+                    resolve:{
+                        Books: ['Book',function(Book){
+                            return Book.query().$promise;
+                        }]
+                    }
+
                 }
             }
         })
