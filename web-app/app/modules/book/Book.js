@@ -27,16 +27,21 @@ bookApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider){
             }
         })
         .state('view', {
-            url:'/books/:id/view',
+            url:'/book/:id/view',
             views: {
                 "main": {
                     templateUrl: 'app/modules/book/partials/book-view.html',
-                    controller: 'BookViewController'
+                    controller: 'BookViewController',
+                    resolve:{
+                        Book: ['$stateParams','Book',function($stateParams,Book){
+                            return Book.get({"id" : $stateParams.id}).$promise;
+                        }]
+                    }
                 }
             }
         })
         .state('edit', {
-            url: '/books/:id/edit',
+            url: '/book/:id/edit',
             views: {
                 "main": {
                     templateUrl: 'app/modules/book/partials/book-form.html',
@@ -45,7 +50,7 @@ bookApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider){
             }
         })
         .state('new', {
-            url: '/books/new',
+            url: '/book/new',
             views: {
                 "main": {
                     templateUrl: 'app/modules/book/partials/book-form.html',

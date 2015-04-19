@@ -4,7 +4,7 @@
 var bookServices = angular.module("bookServices",['ngResource'])
 
 bookServices.factory('Book',['$resource',function($resource){
-    return $resource('book/:id', {id:"@id"},{
+    return $resource('books/:id', {id:"@id"},{
         'update': { method:'PUT' }
     });
 }])
