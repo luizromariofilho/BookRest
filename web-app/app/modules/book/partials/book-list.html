@@ -8,10 +8,10 @@
     </tr>
     </thead>
     <tbody>
-        <tr ng-repeat="book in books" ng-click="view(book)" class="mousehand">
-            <td>{{book.title}}</td>
-            <td>{{book.author}}</td>
-            <td>{{book.price | currency}}</td>
+        <tr ng-repeat="book in books" class="mousehand">
+            <td ng-click="view(book)">{{book.title}}</td>
+            <td ng-click="view(book)">{{book.author}}</td>
+            <td ng-click="view(book)">{{book.price | currency}}</td>
             <td><button ng-click="edit(book)">Edit</button> <button ng-click="delete(book)">Delete</button> </td>
         </tr>
     </tbody>
