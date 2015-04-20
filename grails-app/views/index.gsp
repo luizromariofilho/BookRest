@@ -35,7 +35,7 @@
                     </ul>
                     <form class="navbar-form navbar-right" role="search">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search for...">
+                            <input type="text" class="form-control" placeholder="Search for..." ng-model="query">
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">Go!</button>
                             </span>
