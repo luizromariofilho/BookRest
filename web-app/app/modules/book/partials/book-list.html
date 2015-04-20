@@ -8,13 +8,15 @@
         </tr>
     </thead>
     <tbody>
-        <tr ng-repeat="book in books | filter:query" class="mousehand">
+        <tr ng-repeat="book in books | filter:query" class="mousehand" ng-mouseover="hover($index)">
             <td ng-click="view(book)">{{book.title}}</td>
             <td ng-click="view(book)">{{book.author}}</td>
             <td ng-click="view(book)">{{book.price | currency}}</td>
             <td>
-                <span class="glyphicon glyphicon-pencil" ng-click="edit(book)" ></span>
-                <span class="glyphicon glyphicon-remove" ng-click="delete(book)" ></span>
+                <div ng-show="show[$index]" class="check-element sample-show-hide">
+                    <span class="glyphicon glyphicon-pencil" ng-click="edit(book)" ></span>
+                    <span class="glyphicon glyphicon-remove" ng-click="delete(book)" ></span>
+                </div>
             </td>
         </tr>
     </tbody>

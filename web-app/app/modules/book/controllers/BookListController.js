@@ -3,6 +3,11 @@
  */
 bookApp.controller('BookListController',['$scope','Books','$state', function($scope, Books,$state){
         $scope.books = Books;
+        $scope.show = new Array();
+
+        $scope.hover = function(index){
+                return $scope.show[index] = !$scope.show[index];
+        }
 
         $scope.view = function(book){
                 $state.go("view",{id:book.id});
