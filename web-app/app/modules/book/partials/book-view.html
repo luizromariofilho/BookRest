@@ -1,5 +1,20 @@
-<ul>
-    <li>Title: {{book.title}}</li>
-    <li>Author: {{book.author}}</li>
-    <li>Price: {{book.price}}</li>
-</ul>
+<div>
+    <div>
+        <span class="bold col-lg-4">Title: </span>
+        <span class="col-lg-4">{{book.title}}</span>
+    </div>
+    <div>
+        <span class="bold col-lg-4">Author: </span>
+        <span class="col-lg-4">{{book.author}}</span>
+    </div>
+    <div>
+        <span class="bold col-lg-4">Price: </span>
+        <span class="col-lg-4">{{book.price | currency}}</span>
+    </div>
+</div>
+<button class="btn btn-success" ng-click="edit(book)">
+    Edit
+</button>
+<button class="btn btn-danger" ng-click="delete(book)">
+    Delete
+</button>

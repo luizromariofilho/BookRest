@@ -1,18 +1,21 @@
-<table class="table">
+<table class="table table-striped">
     <thead>
-    <tr>
-        <td>Title</td>
-        <td>Author</td>
-        <td>Price</td>
-        <td></td>
-    </tr>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
     </thead>
     <tbody>
         <tr ng-repeat="book in books | filter:query" class="mousehand">
             <td ng-click="view(book)">{{book.title}}</td>
             <td ng-click="view(book)">{{book.author}}</td>
             <td ng-click="view(book)">{{book.price | currency}}</td>
-            <td><button ng-click="edit(book)">Edit</button> <button ng-click="delete(book)">Delete</button> </td>
+            <td>
+                <span class="glyphicon glyphicon-pencil" ng-click="edit(book)" ></span>
+                <span class="glyphicon glyphicon-remove" ng-click="delete(book)" ></span>
+            </td>
         </tr>
     </tbody>
     <!--<tfoot>

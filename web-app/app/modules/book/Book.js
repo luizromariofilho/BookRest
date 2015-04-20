@@ -9,6 +9,7 @@ bookApp.config(['$stateProvider', '$urlRouterProvider',function($stateProvider){
                 "main":{
                     templateUrl:"app/modules/main/partials/home-view.html"
                 }
+
             }
         })
         .state('list', {
