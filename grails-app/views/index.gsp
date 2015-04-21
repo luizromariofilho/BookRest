@@ -2,10 +2,11 @@
 <html ng-app="bookApp">
     <head lang="en">
         <meta charset="UTF-8">
-        <title></title>
+        <title>Book Rest</title>
         <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css ">
         <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css ">
         <link rel="stylesheet" href="css/app.css">
+        <link rel="favicon" href="images/favicon.png"/>
 
         <script src="js/jquery/jquery-2.1.3.js"></script>
         <script src="js/angularjs/angular.js"></script>
