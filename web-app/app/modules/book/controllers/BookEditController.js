@@ -4,10 +4,15 @@
 bookApp.controller('BookEditController',['$scope','Book','$state', function($scope,Book,$state){
     $scope.book = Book;
 
+    $scope.cancel = function(){
+        $state.go('list');
+    }
+
     $scope.save = function () {
         $scope.book.$update(function(){
             alert('Editou com sucesso!');
             $state.go('list');
         });
     }
+
 }])

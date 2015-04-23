@@ -1,20 +1,27 @@
-<div>
-    <div>
-        <span class="bold col-lg-4">Title: </span>
-        <span class="col-lg-4">{{book.title}}</span>
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title" id="panel-title"><span class="bold">Details: </span>{{book.title}}</h3>
     </div>
-    <div>
-        <span class="bold col-lg-4">Author: </span>
-        <span class="col-lg-4">{{book.author}}</span>
-    </div>
-    <div>
-        <span class="bold col-lg-4">Price: </span>
-        <span class="col-lg-4">{{book.price | currency}}</span>
+    <div class="panel-body">
+        <ul class="">
+            <li>
+                <span class="bold">Title: </span>
+                <span>{{book.title}}</span>
+            </li>
+            <li>
+                <span class="bold">Author: </span>
+                <span>{{book.author}}</span>
+            </li>
+            <li>
+                <span class="bold">Price: </span>
+                <span>{{book.price | currency}}</span>
+            </li>
+        </ul>
+        <div class="col-lg-2">
+            <button class="btn btn-success btn-block" ng-click="edit(book)">Edit</button>
+        </div>
+        <div class="col-lg-2">
+            <button class="btn btn-danger btn-block" ng-click="delete(book)">Delete</button>
+        </div>
     </div>
 </div>
-<button class="btn btn-success" ng-click="edit(book)">
-    Edit
-</button>
-<button class="btn btn-danger" ng-click="delete(book)">
-    Delete
-</button>

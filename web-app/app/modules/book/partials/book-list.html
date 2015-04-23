@@ -4,16 +4,16 @@
             <th>Title</th>
             <th>Author</th>
             <th>Price</th>
-            <th></th>
+            <!--<th></th> -->
         </tr>
     </thead>
     <tbody>
-        <tr ng-animate="'animate'" ng-repeat="book in books | filter:query">
+        <tr class="mousehand" ng-repeat="book in books | filter:query">
             <td ng-click="view(book)">{{book.title}}</td>
             <td ng-click="view(book)">{{book.author}}</td>
             <td ng-click="view(book)">{{book.price | currency}}</td>
             <td>
-                <div ng-show="show[$index]" class="check-element sample-show-hide">
+                <div>
                     <span class="glyphicon glyphicon-pencil" ng-click="edit(book)" ></span>
                     <span class="glyphicon glyphicon-remove" ng-click="delete(book)" ></span>
                 </div>

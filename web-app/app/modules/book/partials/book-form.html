@@ -14,5 +14,10 @@
         <input type="number" id="price" ng-model="book.price" class="form-control" />
         <p class="help-block">Enter the book's price.</p>
     </div>
-    <button type="submit" class="btn btn-primary">Save</button>
+    <div class="col-lg-2">
+        <button type="submit" class="btn btn-primary btn-block" >Save</button>
+    </div>
+    <div class="col-lg-2">
+        <a class="btn btn-warning btn-block" ng-click="cancel()">Cancel</a>
+    </div>
 </form>

@@ -45,9 +45,7 @@
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
-        <div class="container" >
-            <div class="jumbotron" ui-view="main">
-            </div>
+        <div class="container" ui-view="main">
         </div>
         <script src="app/app.js"></script>
         <script src="app/modules/book/Book.js"></script>

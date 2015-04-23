@@ -10,4 +10,8 @@ bookApp.controller("BookNewController", ["$scope", "Book","$state", function($sc
             $state.go('view',{id:book.id});
         });
     }
+
+    $scope.cancel = function(){
+        $state.go("list");
+    }
 }])
