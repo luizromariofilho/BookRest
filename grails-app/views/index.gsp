@@ -14,6 +14,7 @@
         <script src="js/angularjs/angular-ui-router.js"></script>
         <script src="js/angularjs/angular-sanitize.js"></script>
         <script src="js/angularjs/angular-animate.js"></script>
+        <script src="js/angular-file-upload/angular-file-upload.js"></script>
     </head>
 
     <body>
