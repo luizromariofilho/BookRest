@@ -15,6 +15,22 @@
         <script src="js/angularjs/angular-sanitize.js"></script>
         <script src="js/angularjs/angular-animate.js"></script>
         <script src="js/angular-file-upload/angular-file-upload.js"></script>
+
+        <style>
+        .my-drop-zone { border: dotted 3px lightgray; }
+        .nv-file-over { border: dotted 3px red; } /* Default class applied to drop zones on over */
+        .another-file-over-class { border: dotted 3px green; }
+        html, body { height: 100%; }
+        canvas {
+            background-color: #f3f3f3;
+            -webkit-box-shadow: 3px 3px 3px 0 #e3e3e3;
+            -moz-box-shadow: 3px 3px 3px 0 #e3e3e3;
+            box-shadow: 3px 3px 3px 0 #e3e3e3;
+            border: 1px solid #c3c3c3;
+            height: 100px;
+            margin: 6px 0 0 6px;
+        }
+        </style>
     </head>
 
     <body>
@@ -48,12 +64,15 @@
         </nav>
         <div class="container" ui-view="main">
         </div>
-        <script src="app/app.js"></script>
-        <script src="app/modules/book/Book.js"></script>
-        <script src="app/modules/book/services/BookFactory.js"></script>
-        <script src="app/modules/book/controllers/BookListController.js"></script>
-        <script src="app/modules/book/controllers/BookNewController.js"></script>
-        <script src="app/modules/book/controllers/BookViewController.js"></script>
-        <script src="app/modules/book/controllers/BookEditController.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/modules/book/Book.js"></script>
+    <script src="app/modules/book/services/BookFactory.js"></script>
+    <script src="app/modules/book/controllers/BookListController.js"></script>
+    <script src="app/modules/book/controllers/BookNewController.js"></script>
+    <script src="app/modules/book/controllers/BookViewController.js"></script>
+    <script src="app/modules/book/controllers/BookEditController.js"></script>
+
+    <script src="app/directives/fileUploadDirective.js"></script>
+
     </body>
 </html>

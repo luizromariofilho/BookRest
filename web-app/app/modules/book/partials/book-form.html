@@ -1,8 +1,17 @@
 <form id="formBook" class="form" ng-submit="save()">
-    <div class="form-group">
-        <label for="title">Name</label>
-        <input type="text" id="title" ng-model="book.title" class="form-control" />
-        <p class="help-block">Enter the book's name.</p>
+    <div class="row">
+        <div class="form-group col-lg-6">
+            <label for="title">Name</label>
+            <input type="text" id="title" ng-model="book.title" class="form-control" />
+            <p class="help-block">Enter the book's name.</p>
+        </div>
+        <div class="form-group col-lg-6">
+            <label for="picture">Picture</label>
+            <div ng-show="u" id="picture" class="well my-drop-zone" nv-file-over="" uploader="uploader">
+                Base drop zone
+            </div>
+            <div ng-show="" ng-thumb="{ file: item._file, height: 100 }"></div>
+        </div>
     </div>
     <div class="form-group">
         <label for="author">Author</label>
