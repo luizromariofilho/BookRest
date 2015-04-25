@@ -28,6 +28,12 @@
                 </div>
             </div>
         </div>
+        <div class="col-lg-6">
+            <div ngf-drop ng-model="files" class="drop-box"
+                 ngf-drag-over-class="dragover" ngf-multiple="true" ngf-allow-dir="true"
+                 ngf-accept="'.jpg,.png,.pdf'">Drop Images or PDFs files here</div>
+            <div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+        </div>
     </div>
     <div class="col-lg-2">
         <button type="submit" class="btn btn-primary btn-block" >Save</button>

@@ -15,6 +15,8 @@
         <script src="js/angularjs/angular-sanitize.js"></script>
         <script src="js/angularjs/angular-animate.js"></script>
         <script src="js/angular-file-upload/angular-file-upload.js"></script>
+        <script src="js/angular-file-upload-2/ng-file-upload-shim.js"></script> <!-- for no html5 browsers support -->
+        <script src="js/angular-file-upload-2/ng-file-upload.js"></script>
 
         <style>
         .my-drop-zone { border: dotted 3px lightgray; }
