@@ -104,3 +104,5 @@ crashlytics-build.properties
 /grails-app/assets/node_modules
 
 .idea
+
+node_modules/
