@@ -8,7 +8,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr class="mousehand" ng-repeat="book in books | filter:query">
+        <tr class="mousehand" ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}" ng-repeat="book in books | filter:query">
             <td ng-click="view(book)">{{book.title}}</td>
             <td ng-click="view(book)">{{book.author}}</td>
             <td ng-click="view(book)">{{book.price | currency}}</td>
