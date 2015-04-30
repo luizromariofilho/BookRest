@@ -10,3 +10,4 @@ add foto ao livro
 permissão de quem pode criar um livro e quem pode visualizar um livro
 barra de progresso
 add animation transition between menu items
+add validation grails and angular
