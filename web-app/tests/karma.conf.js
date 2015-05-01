@@ -12,6 +12,8 @@ module.exports = function(config){
             'js/angularjs/angular-resource.js',
             'js/angularjs/angular-animate.js',
             'js/angularjs/angular-mocks.js',
+            'js/angular-file-upload/*.js',
+            'js/angular-file-upload-2/*.js',
             'app/**/*.js',
             'tests/unit/**/*.js'
         ],
