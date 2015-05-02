@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/app.css">
         <link rel="favicon" href="images/favicon.png"/>
 
+        <script src="js/require/require.js"></script>
         <script src="js/jquery/jquery-2.1.3.js"></script>
         <script src="js/angularjs/angular.js"></script>
         <script src="js/angularjs/angular-resource.js"></script>
